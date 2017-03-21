@@ -1,0 +1,30 @@
+<html ng-app="angular-routing">
+    <head>
+        <title>SPA Demo</title>
+        <base href="/">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li class="home"><a href="/#">Home</a></li>
+
+                <li class="second"><a href="#second">Second</a></li>
+                
+                <li class="third"><a href="#third">Third</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container" ng-view>
+        </div>
+
+        <script src="app.js"></script>
+        <script src="controllers/homecontroller.js"></script>
+        <script src="controllers/secondcontroller.js"></script>
+        <script src="controllers/thirdcontroller.js"></script>
+    </body>
+
+</html>
